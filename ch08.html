@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calc(cal, n1, n2) {
+            return cal(n1, n2);
+        }
+
+        function sum(num1, num2) {
+            return num1 + num2;
+        }
+
+        function minus(num1, num2){
+            return num1 - num2;
+        }
+        console.log('result = %d', calc(sum, 10, 20));
+        console.log('result = %d', calc(minus, 40, 20));
+
+        var methodSum = sum;
+        console.log('result = %d', methodSum(1,2));
+
+        methodSum = minus;
+        console.log('result = %d', methodSum(10,2));
+    </script>
+</body>
+</html>

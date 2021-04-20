@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var result = 10 && 12 && 3;//모두가 true여야하기에 모두 물어보는데 마지막으로 있는 숫자가 출력되는 것
+        // 중간에 0이 있으면 0 즉 false 출력
+        console.log(result);
+
+        result = 0 || false || '' || 12;
+        console.log(result);
+
+        var a = '';
+        var b = '안녕';
+
+        var result2 = a || b;
+        console.log(result2);
+    </script>
+</body>
+</html>

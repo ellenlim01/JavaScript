@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(1) {//true
+            console.log('1은 true다');
+        }
+        if(0) {
+            console.log('0은 true다');
+        } else {
+            console.log('0은 false다');
+        }
+        if(-2) {//true
+            console.log('-2은 true다');
+        }
+        //0만 false, 나머지 숫자들은 모두 true
+
+        if('') {
+            console.log("''는 true");
+        } else {
+            console.log("''는 false");
+        }
+
+        if('a') {
+            console.log("'a'는 true");
+        }
+
+        //boolean - true는 true, false는 false
+        //숫자 0은 false, 나머지 true
+        //문자열 빈칸은 false, 나머지 true
+        //객체, 배열 true
+        //undefined, null은 false
+        //undefined 값이 할당된 적이 없다
+        //null은 주소값이 없다
+
+        var num;
+        console.log(num);
+
+        num = null;
+        console.log(num);
+    </script>
+</body>
+</html>
