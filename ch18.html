@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var pro1 = new Promise(function(resolve, reject) { 
+            //resolve: 잘 마무리 되었을 때, reject: error시
+
+            setTimeout(function() {
+                resolve(1);
+            }, 5000);
+
+        });
+
+        var pro2 = new Promise(function(resolve) { 
+
+            setTimeout(function() {
+                resolve(2);
+            }, 3000);
+
+        });
+
+        pro1.then(function(res) {
+            console.log('res: ' + res);
+        })
+    </script>
+</body>
+</html>

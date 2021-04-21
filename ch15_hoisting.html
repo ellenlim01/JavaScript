@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 10;
+        console.log('a : ' + a);
+
+        var b;
+        console.log('b : ' +b);
+
+        console.log('c : ' + c);
+        var c =1; //hoisting: 어디에 적든 최상위로 올린다.(var과 function의 경우에만)
+        //선언문만 올라가고 값은 찍히지 않음
+        
+        console.log('d : ' + d);
+
+        sum(10,20);
+
+        function sum(n1, n2) {
+            console.log(n1 + n2);
+        }
+
+        function sum(n1, n2) {
+            console.log('더하기');
+        }// 덮어쓰기가 되었기 때문에 더하기가 출력, 무조건 이름이 같으면 같음
+
+
+    </script>
+</body>
+</html>

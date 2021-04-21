@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(n1) {
+            console.log(n1 + n1);
+        }//30은 무시, 아무것도 안보내면 undefined 즉 호출은 가능
+        function sum(n1) {
+            if(n1 = 10) {
+                console.log(n1);
+            }
+        }//값을 보내면 쓰고 안보내면 그냥 10을 씀
+        function sum(n1=10, n2) {
+                console.log(n1);
+                console.log(n2);
+        }
+        sum(30);
+        sum(20, 30, 40, 50);
+
+        console.log('-------------');
+        
+        // function sumAll() {
+        //     var sum = 0;
+        //     for(var i=0; i<arguments.length; i++) {
+        //         sum += arguments[i];
+        //     }
+        // }
+
+        function sumAll2(...args) {
+            for(var i=0; i<args.length; i++) {
+                sum += args[i];
+            }
+        }
+
+        sumAll(1);
+        sumAll(1, 5);
+        sumAll(1, 5, 7);
+        sumAll(1, 5, 7, 10);
+
+
+    </script>
+</body>
+</html>

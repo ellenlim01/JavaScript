@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        arr.push(10);
+        arr.push(20);
+        arr.push(30);
+        arr.push(40);
+
+        arr.shift();// 앞부터 삭제
+
+        arr.length = arr.length - 1;
+
+        arr.pop(); //뒤부터 삭제
+
+        arr.unshift(11);
+        arr.unshift(12);
+
+        console.log('arr : ' + arr);
+        var delVal = arr.splice(1, 1); // 중간에 있는 값 삭제할 때 사용(방번호, 개수), 삭제한 값 리턴
+        console.log('arr : ' + arr);
+        console.log('delVal : ' + delVal);
+        
+    </script>
+</body>
+</html>

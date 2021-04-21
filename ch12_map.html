@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr2 = [10, 20, 30, 40, 50];
+
+        var result = arr2.map(function (item) {
+            if(item < 35) {
+                return item - 5
+            }
+            return item + 5
+        });
+        console.log(result);
+        console.log('-----------')
+        function myMap(item) {
+            return item + 1;
+        }
+        var result2 = arr2.map(myMap);
+
+        console.log('arr2: ' + arr2);//비파괴 method
+        console.log(result2);
+    </script>
+</body>
+</html>
